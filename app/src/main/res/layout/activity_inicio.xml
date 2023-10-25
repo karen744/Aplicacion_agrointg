@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".appagroint1.inicio"
-    android:background="@color/teal_700">
+    tools:context=".appagroint1.Inicio"
+    android:background="#365738">
 
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="314dp"
-        android:layout_height="323dp"
+        android:layout_width="233dp"
+        android:layout_height="213dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/bordes_redondeados"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
@@ -23,8 +24,9 @@
         android:layout_width="251dp"
         android:layout_height="81dp"
         android:layout_marginTop="76dp"
-        android:background="@color/teal_700"
+        android:backgroundTint="#998DB581"
         android:text="Registro Agronomos"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="@+id/imageView"
@@ -34,8 +36,9 @@
         android:id="@+id/button2"
         android:layout_width="252dp"
         android:layout_height="78dp"
-        android:background="@color/black"
+        android:backgroundTint="#998DB581"
         android:text="Registro personas"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/button"
         app:layout_constraintHorizontal_bias="0.0"
@@ -48,8 +51,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
-        android:background="@color/teal_700"
         android:text="Iniciar Sesion"
+        android:backgroundTint="#998DB581"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/button2"
         app:layout_constraintHorizontal_bias="0.49"
@@ -63,10 +67,36 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintHorizontal_bias="0.847"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.803"
+        app:layout_constraintVertical_bias="0.729"
         app:srcCompat="@android:drawable/ic_dialog_info" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Universidad de Nariño"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.909" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="636dp"
+        android:text="2023"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
