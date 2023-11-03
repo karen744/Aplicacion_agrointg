@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "878234945236",
+    "project_id": "agroint-d16f2",
+    "storage_bucket": "agroint-d16f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878234945236:android:d054d7f826b578f9d79d41",
+        "android_client_info": {
+          "package_name": "co.edu.udenar.agrointg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9MELb_hPNPK_pKic0X38X_ZsXb-oBilI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

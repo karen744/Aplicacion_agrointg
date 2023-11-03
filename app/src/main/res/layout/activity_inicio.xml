@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".appagroint1.Inicio"
-    android:background="#365738">
+    android:background="#9EB58C">
 
 
     <ImageView
