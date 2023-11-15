@@ -4,29 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".appagroint1.Inicio"
-    android:background="#9EB58C">
+    tools:context=".appagroint1.Inicio">
 
+
+    <ImageView
+        android:id="@+id/imageBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:scaleType="centerCrop"
+        android:foreground="#CB009929"
+        app:srcCompat="@drawable/campo_bg_cut_new" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="233dp"
         android:layout_height="213dp"
-        android:layout_marginTop="60dp"
-        android:background="@drawable/bordes_redondeados"
+        android:layout_marginTop="64dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logo_removebg_preview" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="251dp"
-        android:layout_height="81dp"
+        android:layout_height="60dp"
         android:layout_marginTop="76dp"
-        android:backgroundTint="#998DB581"
         android:text="Registro Agronomos"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeColor="#7ED321"
+        app:strokeWidth="2dp"
         android:textColor="@color/black"
+        android:backgroundTint="#DBF6D5"
+        app:cornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="@+id/imageView"
@@ -35,10 +50,14 @@
     <Button
         android:id="@+id/button2"
         android:layout_width="252dp"
-        android:layout_height="78dp"
-        android:backgroundTint="#998DB581"
+        android:layout_height="60dp"
         android:text="Registro personas"
         android:textColor="@color/black"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeColor="#7ED321"
+        app:strokeWidth="2dp"
+        android:backgroundTint="#DBF6D5"
+        app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/button"
         app:layout_constraintHorizontal_bias="0.0"
@@ -52,8 +71,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
         android:text="Iniciar Sesion"
-        android:backgroundTint="#998DB581"
         android:textColor="@color/black"
+        android:backgroundTint="@null"
+        android:background="@drawable/agro_btn_fondo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/button2"
         app:layout_constraintHorizontal_bias="0.49"

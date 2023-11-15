@@ -12,7 +12,7 @@
         android:layout_width="742dp"
         android:layout_height="1099dp"
         android:alpha="0.4"
-        app:srcCompat="@drawable/verde"
+        app:srcCompat="@drawable/campo_bg"
         tools:layout_editor_absoluteX="-191dp"
         tools:layout_editor_absoluteY="-177dp" />
 

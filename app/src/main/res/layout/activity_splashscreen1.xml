@@ -13,7 +13,7 @@
         android:layout_width="295dp"
         android:layout_height="317dp"
         android:alpha="0.70"
-        android:background="@drawable/bordes_redondeados"
+        android:background="@drawable/agro_btn_fondo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
