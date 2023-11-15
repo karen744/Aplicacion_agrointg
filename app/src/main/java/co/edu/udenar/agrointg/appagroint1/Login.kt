@@ -9,12 +9,13 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import co.edu.udenar.agrointg.R
 import com.google.firebase.auth.FirebaseUser
+import com.google.android.material.textfield.TextInputLayout
 
 
     class Login : AppCompatActivity() {
         private lateinit var mAuth: FirebaseAuth
-        private lateinit var emailEditText: EditText
-        private lateinit var passwordEditText: EditText
+        private lateinit var emailTextInputLayout: TextInputLayout
+        private lateinit var passwordTextInputLayout: TextInputLayout
 
         private val loginButton: Button by lazy {
             findViewById<Button>(R.id.buttonLogin)
@@ -25,12 +26,12 @@ import com.google.firebase.auth.FirebaseUser
             setContentView(R.layout.activity_login)
 
             mAuth = FirebaseAuth.getInstance()
-            emailEditText = findViewById(R.id.editTextTextEmail)
-            passwordEditText = findViewById(R.id.editTextTextPassword)
+            emailTextInputLayout = findViewById(R.id.textInputLayout2)
+            passwordTextInputLayout = findViewById(R.id.textInputLayout)
 
             loginButton.setOnClickListener {
-                val email = emailEditText.text.toString()
-                val password = passwordEditText.text.toString()
+                val email = emailTextInputLayout.editText?.text.toString()
+                val password = passwordTextInputLayout.editText?.text.toString()
 
                 if (email.isNotEmpty() && password.isNotEmpty()) {
                     mAuth.signInWithEmailAndPassword(email, password)
