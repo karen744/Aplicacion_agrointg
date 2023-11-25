@@ -5,16 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#87B184"
-    tools:context=".appagroint1.menu">
+    tools:context=".appagroint1.Menu">
 
     <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="742dp"
-        android:layout_height="1099dp"
-        android:alpha="0.4"
-        app:srcCompat="@drawable/campo_bg"
-        tools:layout_editor_absoluteX="-191dp"
-        tools:layout_editor_absoluteY="-177dp" />
+        android:id="@+id/imageBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:scaleType="centerCrop"
+        android:foreground="#8B027A22"
+        app:srcCompat="@drawable/campo_bg_cut_new" />
 
     <TextView
         android:id="@+id/textView11"
@@ -31,6 +35,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.025" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPlantas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="232dp"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

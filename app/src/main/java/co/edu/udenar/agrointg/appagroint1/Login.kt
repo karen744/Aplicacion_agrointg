@@ -3,7 +3,6 @@ package co.edu.udenar.agrointg.appagroint1
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -39,7 +38,7 @@ import com.google.android.material.textfield.TextInputLayout
                             if (task.isSuccessful) {
                                 val user: FirebaseUser? = mAuth.currentUser
                                 if (user != null) {
-                                    val intent = Intent(this, menu::class.java)
+                                    val intent = Intent(this, Menu::class.java)
                                     startActivity(intent)
                                 }
                             } else {
