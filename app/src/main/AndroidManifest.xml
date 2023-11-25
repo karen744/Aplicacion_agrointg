@@ -16,7 +16,7 @@
             android:name=".appagroint1.Login"
             android:exported="false" />
         <activity
-            android:name=".Splashscreen1"
+            android:name=".MainActivity"
             android:exported="true" />
         <activity
             android:name=".appagroint1.Menu"
@@ -25,7 +25,7 @@
             android:name=".appagroint1.RegistroPersonas"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Splashscreen1"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
