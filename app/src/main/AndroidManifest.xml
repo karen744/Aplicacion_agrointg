@@ -25,6 +25,9 @@
             android:name=".appagroint1.Menu"
             android:exported="false" />
         <activity
+            android:name=".appagroint1.RegistroAgronomos"
+            android:exported="false" />
+        <activity
             android:name=".appagroint1.RegistroPersonas"
             android:exported="false" />
         <activity

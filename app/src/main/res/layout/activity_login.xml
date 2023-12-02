@@ -52,8 +52,8 @@
         android:layout_height="59dp"
         app:boxBackgroundMode="outline"
         app:boxStrokeColor="#7ED321"
-        app:endIconMode="password_toggle"
         app:endIconCheckable="false"
+        app:endIconMode="password_toggle"
         app:layout_constraintBottom_toBottomOf="@+id/imageBack"
         app:layout_constraintEnd_toEndOf="@+id/imageBack"
         app:layout_constraintHorizontal_bias="0.495"
@@ -64,8 +64,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
-            android:hint="Password" />
+            android:hint="Password"
+            android:inputType="textPassword"/>
     </com.google.android.material.textfield.TextInputLayout>
 
 
