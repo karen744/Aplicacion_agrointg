@@ -11,6 +11,7 @@ import co.edu.udenar.agrointg.R
 class Inicio : AppCompatActivity() {
 
     private lateinit var imageButton: ImageButton
+    private lateinit var buttonRegistroAgronomos: Button
     private lateinit var buttonRegistroPersonas: Button
     private lateinit var buttonIniciarSesion: Button
 
@@ -20,11 +21,18 @@ class Inicio : AppCompatActivity() {
         setContentView(R.layout.activity_inicio)
 
         imageButton = findViewById(R.id.imageButton)
+        buttonRegistroAgronomos = findViewById(R.id.button)
         buttonRegistroPersonas = findViewById(R.id.button2)
         buttonIniciarSesion = findViewById(R.id.button3)
 
         imageButton.setOnClickListener {
             showToast("Karen Mutis, David Guerrero, Felipe Arteaga, AGROINT")
+        }
+
+        buttonRegistroAgronomos.setOnClickListener {
+            // Iniciar la actividad de registro de agrónomos
+            val intent = Intent(this, RegistroAgronomos::class.java)
+            startActivity(intent)
         }
 
         buttonRegistroPersonas.setOnClickListener {
