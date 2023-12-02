@@ -1,7 +1,7 @@
 package co.edu.udenar.agrointg.appagroint1
 
 sealed class CategoriaPlantas {
-    object Arboles:CategoriaPlantas()
-    object Arbustos:CategoriaPlantas()
-    object Hiervas:CategoriaPlantas()
+    data class Arboles(val altura: Int, val tipoHojas: String) : CategoriaPlantas()
+    data class Arbustos(val tamano: String) : CategoriaPlantas()
+    data class Hierbas(val propiedadesMedicinales: Boolean) : CategoriaPlantas()
 }
