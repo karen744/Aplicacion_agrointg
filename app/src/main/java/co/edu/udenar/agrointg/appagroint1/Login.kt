@@ -2,6 +2,7 @@ package co.edu.udenar.agrointg.appagroint1
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -38,15 +39,24 @@ import com.google.android.material.textfield.TextInputLayout
                             if (task.isSuccessful) {
                                 val user: FirebaseUser? = mAuth.currentUser
                                 if (user != null) {
+                                    Log.d(
+                                        "LoginActivity",
+                                        "Autenticación exitosa para ${user.email}"
+                                    )
                                     val intent = Intent(this, Menu::class.java)
                                     startActivity(intent)
+                                } else {
+                                    Log.e(
+                                        "LoginActivity",
+                                        "Error: El usuario es nulo después de la autenticación exitosa"
+                                    )
                                 }
                             } else {
-                                Toast.makeText(this, "Autenticación fallida", Toast.LENGTH_SHORT).show()
+                                Log.e("LoginActivity", "Error de autenticación: ${task.exception}")
+                                Toast.makeText(this, "Autenticación fallida", Toast.LENGTH_SHORT)
+                                    .show()
                             }
                         }
-                } else {
-                    Toast.makeText(this, "Por favor, complete todos los campos", Toast.LENGTH_SHORT).show()
                 }
             }
         }
