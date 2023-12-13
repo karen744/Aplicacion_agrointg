@@ -12,8 +12,11 @@ class MainActivity: AppCompatActivity(){
         val service = RetrofitService.RetrofitServiceFactory.makeRetrofitService()
 
         lifecycleScope.launch {
-            val movies = service.listPopularMovies("43129791d8f75a33ef869384ca513ac8","es-CO")
-            println(movies)
+            val movies = service.listPopularMovies("HEq1u9eSV3owTzra", "1.2136100", "-77.2811100")
+            val result = movies.data_day
+            // time, tem_max, tem_min, team_mean, felttem_max, felttem_min, winddirection
+            // precipitacion, windspeed_max, windspeed_mean, windspeed_min,
+            println(result)
         }
 
         setContentView(R.layout.activity_main)

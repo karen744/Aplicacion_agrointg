@@ -11,37 +11,41 @@
         android:id="@+id/imageBack"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:foreground="#8B027A22"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        android:scaleType="centerCrop"
-        android:foreground="#8B027A22"
         app:srcCompat="@drawable/campo_bg_cut_new" />
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="233dp"
-        android:layout_height="113dp"
-        android:gravity="center"
-        android:text="AgroInt"
-        android:textColor="@color/black"
-        android:textSize="50dp"
-        android:textStyle="bold"
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:alpha="0.90"
+        android:background="@drawable/logo_agro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/logo_removebg_logo" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvPlantas"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="232dp"
+        android:layout_height="330dp"
+        android:paddingLeft="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageBack"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageBack"
+        app:layout_constraintTop_toTopOf="@+id/imageBack"
+        app:layout_constraintVertical_bias="0.234"
         tools:ignore="MissingConstraints" />
 
 
