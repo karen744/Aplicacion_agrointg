@@ -2,7 +2,6 @@ package co.edu.udenar.agrointg.appagroint1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import co.edu.udenar.agrointg.R
 import android.content.Intent
 import android.util.Log
 import android.view.WindowManager
@@ -41,7 +40,8 @@ class RegistroAgronomos : AppCompatActivity() {
             /* Toast.makeText(this, "Formulario válido", Toast.LENGTH_SHORT).show() */
             auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
                 if (it.isSuccessful) {
-                    Toast.makeText(this@RegistroAgronomos, "Registro exitoso", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@RegistroAgronomos, "Registro exitoso", Toast.LENGTH_LONG)
+                        .show()
                 } else {
                     Toast.makeText(
                         this@RegistroAgronomos,

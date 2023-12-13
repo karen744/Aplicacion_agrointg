@@ -35,10 +35,15 @@ class RegistroPersonas : AppCompatActivity() {
                     if (isEmailValid(correo)) {
                         registrarUsuario(correo, contrasena, nombre, edad.toInt())
                     } else {
-                        Toast.makeText(this, "El correo electrónico no es válido", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(
+                            this,
+                            "El correo electrónico no es válido",
+                            Toast.LENGTH_SHORT
+                        ).show()
                     }
                 } else {
-                    Toast.makeText(this, "Por favor, completa todos los campos", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Por favor, completa todos los campos", Toast.LENGTH_SHORT)
+                        .show()
                 }
             }
             val intent = Intent(this, Inicio::class.java)
@@ -54,7 +59,11 @@ class RegistroPersonas : AppCompatActivity() {
                     Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT).show()
                     // Aquí puedes redirigir al usuario o realizar otras acciones después del registro.
                 } else {
-                    Toast.makeText(this, "Error en el registro: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        this,
+                        "Error en el registro: ${task.exception?.message}",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
             }
     }

@@ -55,7 +55,9 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation ("com.google.android.gms:play-services-location:17.1.0")
     implementation ("com.google.android.libraries.places:places:2.7.0")
-
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
+    implementation ("com.github.bumptech.glide:glide:4.14.2")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.14.2")
 
 
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
