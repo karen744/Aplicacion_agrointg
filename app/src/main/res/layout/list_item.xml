@@ -5,10 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_margin="5dp"
-        android:layout_height="wrap_content">
+
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/RV_Image"
@@ -29,9 +26,39 @@
             android:textSize="25sp"
             android:layout_marginStart="120dp"
             android:layout_marginTop="29dp"
-            android:textColor="#FFFFFF"
+            android:textColor="#FBFAFA"
             />
 
-    </RelativeLayout>
+        <TextView
+            android:id="@+id/FV_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="29dp"
+            android:text="Mohan"
+            android:textColor="#FBFAFA"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/GV_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mohan"
+            android:textSize="25sp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="29dp"
+            android:textColor="#FBFAFA"
+            />
+        <TextView
+            android:id="@+id/OV_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mohan"
+            android:textSize="25sp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="29dp"
+            android:textColor="#FBFAFA"
+            />
+
 
 </LinearLayout>

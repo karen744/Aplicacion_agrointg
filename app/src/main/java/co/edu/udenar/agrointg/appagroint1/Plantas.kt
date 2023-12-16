@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.retrofit_yt.PlantasAdapter
 import co.edu.udenar.agrointg.R
 import retrofit2.Call
 import retrofit2.Callback
@@ -18,7 +17,7 @@ class Plantas : AppCompatActivity() {
     lateinit var rvMain: RecyclerView
     lateinit var myAdapter: PlantasAdapter
 
-    var BASE_URL = "https://perenual.com/api/"
+    var BASE_URL = "https://www.fruityvice.com/api/"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,12 +41,12 @@ class Plantas : AppCompatActivity() {
             .build()
             .create(InterfacePlantas::class.java)
 
-        var retroData = retrofit.getSpeciesList("sk-p0Gh6570a2925d4c53366", "monstera")
+        var retroData = retrofit.getData()
 
-        retroData.enqueue(object : Callback<List<Data>> {
+        retroData.enqueue(object : Callback<List<UsersItem>> {
             override fun onResponse(
-                call: Call<List<Data>>,
-                response: Response<List<Data>>
+                call: Call<List<UsersItem>>,
+                response: Response<List<UsersItem>>
             ) {
                 var data = response.body()!!
 
@@ -58,7 +57,7 @@ class Plantas : AppCompatActivity() {
                 Log.d("data", data.toString())
             }
 
-            override fun onFailure(call: Call<List<Data>>, t: Throwable) {
+            override fun onFailure(call: Call<List<UsersItem>>, t: Throwable) {
 
             }
 
