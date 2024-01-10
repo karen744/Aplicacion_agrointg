@@ -73,7 +73,7 @@ class Menu : AppCompatActivity() {
             lifecycleScope.launch {
                 val daysDeferred = async {
                     //service.listPopularMovies("HEq1u9eSV3owTzra", "1.2136100", "-77.2811100")
-                    service.listPopularMovies("HEq1u9eSV3owTzra", lat.toString(), lon.toString())
+                    service.listPopularMovies("y2FC5I1Wc4mqa7SG", lat.toString(), lon.toString())
                 }
 
                 val days = daysDeferred.await()
