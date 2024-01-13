@@ -2,7 +2,6 @@ package co.edu.udenar.agrointg.appagroint1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import co.edu.udenar.agrointg.R
 import android.content.Intent
 import android.util.Log
 import android.view.WindowManager
