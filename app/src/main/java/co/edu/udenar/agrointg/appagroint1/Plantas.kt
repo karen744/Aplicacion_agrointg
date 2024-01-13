@@ -17,7 +17,7 @@ class Plantas : AppCompatActivity() {
     lateinit var rvMain: RecyclerView
     lateinit var myAdapter: PlantasAdapter
 
-    var BASE_URL = "https://www.fruityvice.com/api/"
+    var BASE_URL = "https://trefle.io/api/v1/"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,24 +41,27 @@ class Plantas : AppCompatActivity() {
             .build()
             .create(InterfacePlantas::class.java)
 
-        var retroData = retrofit.getData()
 
-        retroData.enqueue(object : Callback<List<UsersItem>> {
+        var retroData = retrofit.getData("uujyalzcwWsJ9gerYFMSk-k3n1n9QpkG4ALcxKdT3nM")
+        Log.d("aja",retroData.toString())
+
+        retroData.enqueue(object : Callback<ApiResponse> {
             override fun onResponse(
-                call: Call<List<UsersItem>>,
-                response: Response<List<UsersItem>>
+                call: Call<ApiResponse>,
+                response: Response<ApiResponse>
+
             ) {
                 var data = response.body()!!
-
-                myAdapter = PlantasAdapter(baseContext, data)
+                Log.d("aja1",data.toString())
+                myAdapter = PlantasAdapter(baseContext, data.data)
 
                 rvMain.adapter = myAdapter
 
                 Log.d("data", data.toString())
             }
 
-            override fun onFailure(call: Call<List<UsersItem>>, t: Throwable) {
-
+            override fun onFailure(call: Call<ApiResponse>, t: Throwable) {
+                Log.d("aja",t.toString())
             }
 
         })
